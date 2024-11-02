@@ -1,0 +1,70 @@
+
+.lib{
+    height: 85vh;
+    position: fixed;
+    top:56px;
+    width: 22vw;
+    transition: all 0.5s ease-out;
+}
+
+.lib .head img{
+    width: 19px;
+    padding-right: 10px;
+}
+.lib .head{
+    font-size: 13px;
+    font-weight: bold;
+}
+.footer{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    font-size: 8px;
+    position: absolute;
+    bottom:5%;
+    padding-right :50px;
+}
+.footer a{
+    text-decoration: none;
+    font-weight: 10px;
+    color: #ffffffa4;
+}
+.songList ul{
+    padding: 15px;
+    margin: 15px 0px;
+    max-height: 65vh;
+    overflow-y: scroll;
+}
+.songList ul li{
+    display: flex;
+    justify-content:space-between;
+    gap: 8px;
+    border: 2px solid #ffffff54;
+    border-radius: 5px;
+    padding: 14px 6px;
+    margin: 8px 10px;
+
+}
+.songList img{
+    width: 16px;
+}
+.songList .info{
+    position: relative;
+    left:6px;
+    font-size:10px;
+}
+.songList .playnow{
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 12px;
+    left: 0px;
+}
+
+.hamclose{
+    filter: invert();
+    position: absolute;
+    left: 90%;
+    opacity: 0;
+}
+

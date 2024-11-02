@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/utility.css">
+    <link rel="stylesheet" href="Css/left.css">
+    <link rel="stylesheet" href="Css/top.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="top flex bg-black">
+            <div class="logo"><img class="invert" src="Svg/logo.svg" alt="logo"></div>
+            <div class="mid flex">
+                <div class="home flex bg-grey"><img class="invert" src="Svg/home.svg" alt="home"></div>
+                <label class="search" for="search"><img class="invert" src="Svg/search.svg" alt="search"></label>
+                <input class="bg-grey search" type="text" name="search" id="search"
+                    placeholder="What do you want to play?">
+            </div>
+            <div class="end flex">
+                <button class="sign">Sign up</button>
+                <button class="log">Log in</button>
+            </div>
+        </div>
+
+        <div class="lib m1 p1 bg-grey2 rounded">
+            <div class="hamclose"><img src="Svg/close.svg" alt="cross"></div>
+            <div class="head flex"><img class="invert" src="Svg/playlist.svg" alt="lib"> Your Library</div>
+            <div class="songList">
+                <ul>
+            
+                </ul>
+            </div>
+            <div class="footer">
+                <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+                <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+            </div>
+        </div>
+        <div class="right bg-grey2">
+            <div class="navig m1">
+                <img class="hamburger" src="Svg/hamburger.svg" alt="3lines">
+                <svg class="nav" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="undefined">
+                    <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+                </svg>
+                <svg class="nav" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="undefined">
+                    <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+                </svg>
+            </div>
+            <div class="playlist">
+                <h1>Spotify playlist</h1>
+
+                <div class="cardContainer">
+                    <div data-folder="Chill" class="card">
+                        <div class="play nav">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 -960 960 960">
+                                <circle cx="480" cy="-480" r="460" fill="green" />
+                                <path d="M320-200v-560l440 280-440 280Z" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="card.jpg" alt="card">
+                        <h3>Chill Vibes</h3>
+                        <p>Hits to boost your mood and fill you with happiness.</p>
+                    </div>
+                    <div data-folder="Party" class="card">
+                        <div class="play nav">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 -960 960 960">
+                                <circle cx="480" cy="-480" r="460" fill="green" />
+                                <path d="M320-200v-560l440 280-440 280Z" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="card.jpg" alt="card">
+                        <h3>Party</h3>
+                        <p>Hits to boost your mood and fill you with happiness.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="songInfo">---</div>
+                <div class="songtime">00:00/00:00</div>
+                <div class="songbtns">
+                    <img id="previous" src="Svg/prevsong.svg" alt="">
+                    <img id="play" src="Svg/play.svg" alt="">
+                    <img id="next" src="Svg/nextsong.svg" alt="">
+                </div>
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+                <div class="volctrl">
+                    <img src="Svg/volume.svg" alt="volume control">
+                    <input type="range">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

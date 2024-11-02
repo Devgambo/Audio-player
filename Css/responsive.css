@@ -1,0 +1,44 @@
+@media (max-width: 1300px) {
+    .lib{
+        position: absolute;
+        left: -100%;
+        z-index: 1;
+    }
+    .right{
+        width:100vw;
+        position: absolute;
+        left: 0px;
+
+    }
+    .playbar{
+        width: 99vw;
+        position: absolute;
+        left: 0px;
+    }
+    .navig .nav{
+        display: none;
+    }
+    .navig .hamburger{
+        filter: invert();
+        display: inline;
+    }
+    .hamclose{
+        opacity: 1;
+    }
+  }
+
+@media (max-width: 850px) {
+    .top .mid{
+        transform: translateX(-35%);
+    }
+    .top .end .sign,.log{
+       opacity: 0;
+    }
+    .songInfo{
+        transform: translateX(30%);
+    }
+    .songtime{
+        transform: translateX(-30%);
+    }
+    
+}
